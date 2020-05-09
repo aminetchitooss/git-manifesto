@@ -264,3 +264,10 @@ https://www.youtube.com/watch?v=QtXj9tt-RUE&list=PLCy7dPypkr2pukWr-6gszy6E_Wf-Zf
     git flow feature finish <feature_name>    # merge feature back into develop branch
 
     git flow release start <version>          # merge develop to release
+
+##for more info about git flow
+
+https://www.youtube.com/watch?v=XbapC7nm49s&list=PLjQo0sojbbxVHcVN4h9DMu6U6spKk21uP&index=6
+
+#for pull requests
+https://www.youtube.com/watch?v=mcWsX_setW4&list=PLjQo0sojbbxVHcVN4h9DMu6U6spKk21uP&index=7
