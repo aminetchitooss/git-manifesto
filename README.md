@@ -2,16 +2,16 @@
 
 > These are the usefull git commands y'all need to work with. 
 
-### Config ###
+### Config
 
     git config --global user.name " "
     git config --global user.email  " "
 
-### Adds everything to the stagging area ###
+### Adds everything to the stagging area
 
     git add .
 
-### Removes a specific file from the stagging area ###
+### Removes a specific file from the stagging area 
 
     ```bash
     git rm --cached file.html
@@ -20,7 +20,7 @@
         git reset 
     ```
 
-### Stash  ###
+### Stash  
 
 >Sometimes I am not done yet and I need to pause my work and fix up a bug real quick
   
@@ -37,11 +37,11 @@
     ```
     
 
-### Commit the stagging area ###
+### Commit the stagging area 
 
     git commit -m "comit comment" 
 
-### Getting logs ###
+### Getting logs 
 
     ```bash
     #Logs with details
@@ -58,7 +58,7 @@
     ```
 
 
-### Revert commits ###
+### Revert commits 
 
     ```bash
     #get the logs with their hash comit XXXX
@@ -72,7 +72,7 @@
     ```
 
 
-### Creating a new working branch ###
+### Creating a new working branch
 
     ```bash
     # with checking into it
@@ -83,7 +83,7 @@
     ```
 
 
-### Deleting a branch ###
+### Deleting a branch 
 
     ```bash
     git checkout master
@@ -99,7 +99,7 @@
 > I prefer using rebase workflow
 >> installing p4merge is recomended
 
-### config p4merge ###
+### config p4merge
 
     git config --global diff.tool p4merge
     git config --global difftool.p4merge.path /Applications/p4merge.app/Contents/MacOS/p4merge 
@@ -111,12 +111,12 @@
 
 # Rebase Workflow
 
-### Sync with remote ###
+### Sync with remote
 
     git checkout master
     git pull 
 
-### Update branch ###
+### Update branch
 
     ```bash
     git checkout <branchname>
@@ -130,14 +130,14 @@
     ```
 
 
-### Push Changes ###
+### Push Changes
 
     git checkout master
     git rebase <branchname>
     git push
 
 
-### other git cmd ###
+### other git cmd
 
     ```bash
 
@@ -161,7 +161,7 @@
 
 # Advanced stuff
 
-### Amend ###
+### Amend
 
     ```bash
     #we forgot to commit some files in the last commit
@@ -170,7 +170,7 @@
     ```
 
 
-### Reword ###
+### Reword
 
     ```bash
     git rebase -i HEAD~2
@@ -179,7 +179,7 @@
     #(ESC + I) to modify then save and close (ESC + : + W + Q)
     ```
 
-### delete ###
+### delete
 
     ```bash
     git rebase -i HEAD~3
@@ -188,7 +188,7 @@
     #(ESC + I) to modify then save and close (ESC + : + W + Q)
     ```
 
-### reorder ###
+### reorder
 
     ```bash
     git rebase -i HEAD~N
@@ -197,7 +197,7 @@
     #(ESC + I) to modify then save and close (ESC + : + W + Q)
     ```
     
-### squashing/fixup ###
+### squashing/fixup
 
     ```bash
     git rebase -i HEAD~3
@@ -207,7 +207,7 @@
     #(ESC + I) to modify then save and close (ESC + : + W + Q)
     ```
 
-### splitting commits ###
+### splitting commits
 
     ```bash
     git rebase -i HEAD~3
@@ -226,7 +226,7 @@
     git rebase --continue
     ```
 
-### Git-archive (exports) downloads examples ###
+### Git-archive (exports) downloads examples
 
     ```bash
     #From a specific tag
@@ -236,7 +236,7 @@
     ```
 
 
-### Cherry pick a commit from one branch and apply it to another ###
+### Cherry pick a commit from one branch and apply it to another
 
     ```bash
     #we have 2 branches branch1 and branch2
@@ -249,7 +249,7 @@
 
 
 
-### Git Flow ###
+### Git Flow
 
     git flow init                             # setup project to use git-flow
 
