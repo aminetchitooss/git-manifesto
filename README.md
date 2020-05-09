@@ -11,7 +11,7 @@
 
     git add .
 
-### Removes a specific file from the stagging area 
+ >Removes a specific file from the stagging area 
 
     ```bash
     git rm --cached file.html
