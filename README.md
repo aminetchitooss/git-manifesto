@@ -143,17 +143,23 @@ git commit -m "confilic fix"
 
 #having an alias for a command (git smth)
 git config --global alias.smth "log --oneline --graph --decorate --all"
+
 #renaming and staging
 git mv example.txt demo.txt
+
 #deleting and staging
 git rm demo.txt
+
 #tagging (if not commit is specified it will be current commit HEAD)
 git tag -a v1.0 -m "release of 1.0"
+
 #deleting tag
 git tag -d v1.0
+
 #resetting to a point in time commit hash XXXX (changing the HEAD location)
 #to that commit --hard is for wiping out pending changes
 git reset XXXXX
+
 #we need to go back even if it doesn't show our commit in git log
 git reflog
 ```
@@ -245,7 +251,7 @@ git rebase --continue
 git format-patch branch2 -o patches
 ```
 
-    https://www.youtube.com/watch?v=QtXj9tt-RUE&list=PLCy7dPypkr2pukWr-6gszy6E_Wf-ZfJrM&index=4
+https://www.youtube.com/watch?v=QtXj9tt-RUE&list=PLCy7dPypkr2pukWr-6gszy6E_Wf-ZfJrM&index=4
 
 
 
