@@ -13,12 +13,12 @@
 
 ## Removes a specific file from the stagging area 
 
-    ```bash
-    git rm --cached file.html
-        git reset file.html
-        #for all files
-        git reset 
-    ```
+```bash
+git rm --cached file.html
+    git reset file.html
+    #for all files
+    git reset 
+```
 
 ## Stash  
 
