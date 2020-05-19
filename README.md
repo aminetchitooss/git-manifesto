@@ -95,9 +95,8 @@ git checkout master
     git branch -D <branchname>
 ```
 
-
-> I prefer using rebase workflow
->> installing p4merge is recomended
+I prefer using rebase workflow
+* Installing p4merge is recomended
 
 ## config p4merge
 
@@ -172,7 +171,7 @@ git reflog
 ```bash
 #we forgot to commit some files in the last commit
 git add file.html
-git commit --ammend --no-edit
+git commit --amend --no-edit
 ```
 
 
