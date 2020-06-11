@@ -110,26 +110,26 @@ I prefer using rebase workflow
 
 # Rebase Workflow
 
-## Sync with remote
+### Sync with remote
 
     git checkout master
     git pull 
 
-## Update branch
+### Update branch
 
-```bash
-git checkout <branchname>
-git rebase master
-#if theres conflict reslove it either on editor or run
-git mergetool
-#then after conflict resolution
-git rebase --continue
-git add files.conflict
-git commit -m "confilic fix"
-```
+    git checkout <branchname>
+    git rebase master
+    
+### Resolve conflict
+
+    git mergetool
+    #then after conflict resolution
+    git rebase --continue
+    git add files.conflict
+    git commit -m "confilic fix"
 
 
-## Push Changes
+### Push Changes
 
     git checkout master
     git rebase <branchname>
