@@ -258,15 +258,66 @@ https://www.youtube.com/watch?v=QtXj9tt-RUE&list=PLCy7dPypkr2pukWr-6gszy6E_Wf-Zf
 
     git flow init                             # setup project to use git-flow
 
-    git flow feature start <feature_name>     # creates a new feature branch called                                                  <feature_name>
+    git flow feature start <feature_name>     # creates a new feature branch called <feature_name>
 
     git flow feature finish <feature_name>    # merge feature back into develop branch
 
     git flow release start <version>          # merge develop to release
 
-##for more info about git flow &zz
+## For more info about git flow
 
 https://www.youtube.com/watch?v=XbapC7nm49s&list=PLjQo0sojbbxVHcVN4h9DMu6U6spKk21uP&index=6
 
-#for pull requests
-https://www.youtube.com/watch?v=mcWsX_setW4&list=PLjQo0sojbbxVHcVN4h9DMu6U6spKk21uP&index=7
+## For Pull requests
+
+```bash
+
+#In case of Github workflow we have one master branch
+
+
+#Create and switch to feature branch "feature/XXXX"
+git checkout -b <feature/XXX>
+
+#add/update some stuff in project
+
+#commit with right titile
+git commit -m "Fixes #issueNumber Add stufff"
+
+#switch to master and sync with remote
+git switch master
+git pull
+
+#switch to feature branch "feature/XXXX"
+git switch <feature/XXXX>
+
+#sync with master and resolve conflicts if there are any
+git rebase master
+
+### Resolve conflict
+
+    git add . # or targeted files
+    git commit -m "confict fix"
+    git rebase --continue
+    git rebase --skip
+
+
+#push the feature branch to remote repo and create a Pull request
+git push origin <feature/XXXX>
+
+#if all is good the reviewer will validate and it gets merged with master branch 
+#Do not forget to delete feature branch "feature/XXXX" in remote and local repo!!!
+
+
+#switch to master and sync with remote
+git switch master
+git pull
+
+#delete feature branch locally
+git branch -d <feature/XXXX>
+
+#delete branch remotely
+git push origin --delete <feature/XXXX>
+
+```
+
+https://www.youtube.com/watch?v=jFL228SfOmU
