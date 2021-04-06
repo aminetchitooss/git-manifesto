@@ -2,15 +2,6 @@
 
 > These are the usefull git commands y'all need to work with. 
 
-## Config
-
-    git config --global user.name " "
-    git config --global user.email  " "
-
-## Adds everything to the stagging area
-
-    git add .
-
 ## Removes a specific file from the stagging area 
 
 ```bash
@@ -294,7 +285,7 @@ git rebase master
 ### Resolve conflict
 
     git add . # or targeted files
-    git commit -m "confict fix"
+    # git commit -m "confict fix"
     git rebase --continue
     git rebase --skip
 
