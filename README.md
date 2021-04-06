@@ -94,8 +94,7 @@ git checkout master
 # force deleting even with unmerged changes (unsafe)
     git branch -D <branchname>
 ```
-
-I prefer using rebase workflow
+# using rebase workflow
 * Installing p4merge is recomended
 
 ## config p4merge
@@ -108,7 +107,6 @@ I prefer using rebase workflow
     git config --global mergetool.p4merge.path /Applications/p4merge.app/Contents/MacOS/p4merge 
     git config --global mergetool.prompt false
 
-# Rebase Workflow
 
 ### Sync with remote
 
@@ -124,8 +122,8 @@ I prefer using rebase workflow
 
     git mergetool
     #then after conflict resolution
+    git add #the files
     git rebase --continue
-    git add files.conflict
     git commit -m "confilic fix"
 
 
