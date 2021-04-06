@@ -264,7 +264,7 @@ https://www.youtube.com/watch?v=QtXj9tt-RUE&list=PLCy7dPypkr2pukWr-6gszy6E_Wf-Zf
 
     git flow release start <version>          # merge develop to release
 
-## for more info about git flow
+## For more info about git flow
 
 https://www.youtube.com/watch?v=XbapC7nm49s&list=PLjQo0sojbbxVHcVN4h9DMu6U6spKk21uP&index=6
 
@@ -292,6 +292,14 @@ git switch <feature/XXXX>
 
 #sync with master and resolve conflicts if there are any
 git rebase master
+
+### Resolve conflict
+
+    git add . # or targeted files
+    git commit -m "confict fix"
+    git rebase --continue
+    git rebase --skip
+
 
 #push the feature branch to remote repo and create a Pull request
 git push origin <feature/XXXX>
