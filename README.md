@@ -2,15 +2,6 @@
 
 > These are the usefull git commands y'all need to work with. 
 
-## Config
-
-    git config --global user.name " "
-    git config --global user.email  " "
-
-## Adds everything to the stagging area
-
-    git add .
-
 ## Removes a specific file from the stagging area 
 
 ```bash
@@ -81,7 +72,6 @@ git revert HEAD
 # without checking in
     git branch <branchname>
 ```
-
 
 ## Deleting a branch 
 
@@ -294,7 +284,7 @@ git rebase master
 ### Resolve conflict
 
     git add . # or targeted files
-    git commit -m "confict fix"
+    # git commit -m "confict fix"
     git rebase --continue
     git rebase --skip
 
@@ -317,5 +307,6 @@ git branch -d <feature/XXXX>
 git push origin --delete <feature/XXXX>
 
 ```
-###link to better underst
+
+##link to better understand
 https://www.youtube.com/watch?v=jFL228SfOmU
