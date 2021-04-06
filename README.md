@@ -73,7 +73,6 @@ git revert HEAD
     git branch <branchname>
 ```
 
-
 ## Deleting a branch 
 
 ```bash
