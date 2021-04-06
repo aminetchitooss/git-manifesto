@@ -307,5 +307,7 @@ git branch -d <feature/XXXX>
 git push origin --delete <feature/XXXX>
 
 ```
-##link to better underst
+
+##link to better understand
+
 https://www.youtube.com/watch?v=jFL228SfOmU
